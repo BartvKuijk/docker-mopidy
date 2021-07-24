@@ -16,8 +16,6 @@ mopidy-local = "*"
 mopidy-mpd = "*"
 mopidy-radionet = "*"
 mopidy-internetarchive = "*"
-mopidy-soundcloud = "*"
-mopidy-spotify = "*"
 pyopenssl = "*"
 
 [requires]
