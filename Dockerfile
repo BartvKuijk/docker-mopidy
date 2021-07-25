@@ -3,7 +3,7 @@ FROM debian:buster-slim
 RUN set -ex \
     # Official Mopidy install for Debian/Ubuntu along with some extensions
     # (see https://docs.mopidy.com/en/latest/installation/debian/ )
- && apt-get update -y\
+ && apt-get update -y \
  && && apt-get install -y python3-pip \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
         curl \
