@@ -5,6 +5,7 @@ RUN set -ex \
     # (see https://docs.mopidy.com/en/latest/installation/debian/ )
  && apt-get update -y \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+        ca-certificates \
         curl \
         dumb-init \
         gnupg \
