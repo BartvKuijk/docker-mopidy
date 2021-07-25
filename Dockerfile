@@ -3,7 +3,8 @@ FROM debian:buster-slim
 RUN set -ex \
     # Official Mopidy install for Debian/Ubuntu along with some extensions
     # (see https://docs.mopidy.com/en/latest/installation/debian/ )
- && apt-get update \
+ && apt-get update -y\
+ && && apt-get install -y python3-pip \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
         curl \
         dumb-init \
@@ -13,7 +14,7 @@ RUN set -ex \
         python3-crypto \
         python3-distutils \
  && curl -L https://bootstrap.pypa.io/get-pip.py | python3 - \
- && pip install pipenv \
+ && pip3 install pipenv \
     # Clean-up
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* ~/.cache
