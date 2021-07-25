@@ -4,7 +4,6 @@ RUN set -ex \
     # Official Mopidy install for Debian/Ubuntu along with some extensions
     # (see https://docs.mopidy.com/en/latest/installation/debian/ )
  && apt-get update -y \
- && && apt-get install -y python3-pip \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
         curl \
         dumb-init \
@@ -13,6 +12,7 @@ RUN set -ex \
         gstreamer1.0-plugins-bad \
         python3-crypto \
         python3-distutils \
+        python3-pip \
  && curl -L https://bootstrap.pypa.io/get-pip.py | python3 - \
  && pip3 install pipenv \
     # Clean-up
