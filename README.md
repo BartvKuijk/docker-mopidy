@@ -1,5 +1,18 @@
 [![](https://images.microbadger.com/badges/image/wernight/mopidy.svg)](http://microbadger.com/images/wernight/mopidy "Get your own image badge on microbadger.com")
 
+Fork of [wernight/docker-mopidy](https://github.com/wernight/docker-mopidy)
+Original docker repository: https://hub.docker.com/r/wernight/mopidy
+Changes:
+- replaced the deprecated mopidy-gmusic with mopidy-ytmusic
+- added mopidy-radionet
+- added mopidy-internetarchive
+Planned changes:
+- raspberry pi support (linux/arm/v7)
+- add snapcast server
+
+Original readme
+===============
+
 What is Mopidy?
 ===============
 
