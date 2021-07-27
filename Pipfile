@@ -16,7 +16,6 @@ mopidy-local = "*"
 mopidy-mpd = "*"
 mopidy-radionet = "*"
 mopidy-internetarchive = "*"
-pyopenssl = "*"
 
 [requires]
 python_version = "3"
